@@ -1,4 +1,73 @@
 /* Estilos generales */
+.registration {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f2f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.registration h2 {
+    margin-bottom: 20px;
+}
+
+.registration label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.registration input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration button {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Estilos para los botones de Registrarse e Iniciar sesión */
+.auth-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.auth-buttons button {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #1877f2;
+    background-color: #fff;
+    color: #1877f2;
+    cursor: pointer;
+}
+
+/* Estilos para colocar los botones en línea */
+.auth-buttons button:first-child {
+    margin-left: 0;
+}
+
+@media (max-width: 480px) {
+    .auth-buttons {
+        flex-direction: column;
+    }
+
+    .auth-buttons button {
+        margin: 5px auto;
+    }
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,6 +102,7 @@ header {
 .hero h1 {
     font-size: 36px;
     text-align: center;
+    /* Alineación al centro */
     margin-top: 50px;
     color: #222;
     /* Color de texto oscuro para el título */
