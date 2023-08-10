@@ -1,55 +1,117 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-}
-
-h1 {
-    color: #333;
-}
-
-ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
+    /* Color de fondo claro */
+    color: #333;
+    /* Color de texto principal */
 }
 
-li {
-    display: inline-block;
-    margin-right: 10px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-form input[type="text"] {
-    padding: 5px;
-    border: 1px solid #ccc;
-}
-
-form button[type="submit"] {
-    padding: 5px 10px;
-    background-color: #333;
+/* Estilos para el encabezado */
+header {
+    background-color: #222;
+    /* Color de fondo oscuro para el encabezado */
     color: #fff;
-    border: none;
-    cursor: pointer;
+    /* Color de texto claro para el encabezado */
+    padding: 10px 0;
 }
 
-.productos-destacados {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.productos-destacados img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.productos-destacados h3 {
-    margin: 0;
-    font-size: 18px;
+.logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
-.productos-destacados p {
-    margin: 0;
-    font-size: 14px;
+/* Estilos para el título del héroe */
+.hero h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+    color: #222;
+    /* Color de texto oscuro para el título */
+}
+
+/* Estilos para los enlaces de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    /* Color de texto claro para los enlaces de navegación */
+}
+
+/* Estilos para la sección de contacto */
+.contact {
+    background-color: #fff;
+    /* Color de fondo claro para la sección de contacto */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+    /* Color de texto oscuro para los títulos */
+}
+
+.contact-links {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-links li {
+    margin-bottom: 10px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: #007bff;
+    /* Color de enlace brillante para los enlaces de contacto */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #222;
+    /* Color de fondo oscuro para el pie de página */
+    color: #fff;
+    /* Color de texto claro para el pie de página */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilos para el botón de llamada a la acción */
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    /* Color de fondo brillante para el botón */
+    color: #fff;
+    /* Color de texto claro para el botón */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Color de fondo más oscuro al pasar el mouse */
 }
