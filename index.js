@@ -7,8 +7,7 @@ function showMessage(message) {
 }
 
 // Función para registrar un nuevo usuario
-function registerUser(event) {
-    event.preventDefault(); // Evita que el formulario se envíe
+function registerUser() {
 
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
