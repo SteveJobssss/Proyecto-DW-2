@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportiumSellers - Artículos Deportivos</title>
+    <link rel="stylesheet" href="index.css"> <!-- Enlace a tu archivo de hojas de estilo CSS -->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">SportiumSellers</div>
+            <ul class="nav-links">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+            <section id="registro" class="registration">
+                <h2>Registro de Usuario</h2>
+                <form id="registration-form">
+                    <input type="text" id="username" placeholder="Nombre de Usuario" required>
+                    <input type="email" id="email" placeholder="Correo Electrónico" required>
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <button type="button" onclick="registerUser()">Registrarse</button>
+                </form>
+                <p id="registration-status"></p>
+            </section>
+    </header>
+
+<section id="login" class="login">
+    <h2>Iniciar Sesión</h2>
+    <form id="login-form">
+        <input type="text" id="login-username" placeholder="Usuario" required>
+        <input type="password" id="login-password" placeholder="Contraseña"required>
+        <button type="button" onclick="loginUser()">Iniciar Sesión</button>
+    </form>
+</section>
+    <section class="hero">
+        <h1>Bienvenido a SportiumSellers</h1>
+        <p>Tu tienda en línea de artículos deportivos de alta calidad.</p>
+        <a href="#" class="cta-button">Ver Productos</a>
+    </section>
+<section class="featured-products">
+    <h2>Productos Destacados</h2>
+    <div class="product">
+        <img src="https://eldeportivo.com.co/wp-content/uploads/2023/01/Polemica-precio-camiseta-Atletico-Nacional-2023-1.png" alt="Producto 1" style="width: 750px; height: 450px;">
+        <h3>Camiseta Deportiva</h3>
+        <p>¡Prendas Oficiales!</p>
+        <a href="#" class="product-button">Ver Detalles</a>
+    </div>
+    <div class="product">
+        <img src="https://th.bing.com/th/id/R.bb87f159e597b80cecc2daa404bf150e?rik=Ub6SmYwTbDDlRw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fskechers-png--1082.png&ehk=ft3v9J4nT8gqs0EQ6ktaueddwR9AIDGbD1BsG6i%2f2nM%3d&risl=&pid=ImgRaw&r=0"
+            alt="Producto 2" style="width: 750px; height: 450px;">
+        <h3>Zapatos 100% Originales</h3>
+        <p>Experimenta la comodidad y estilo al máximo con nuestras marcas.</p>
+        <a href="#" class="product-button">Ver Detalles</a>
+    </div>
+    <div class="product">
+        <img src="https://th.bing.com/th/id/R.794aa6084f5bef9989c7b04f72cb588f?rik=%2fUsqYfjuVnkdFA&pid=ImgRaw&r=0" alt="Producto 3" style="width: 750px; height: 450px;">
+        <h3>Set de Entrenamiento en Casa</h3>
+        <p>¡Mantente en forma desde la comodidad de tu hogar con nuestro set!</p>
+        <a href="#" class="product-button">Ver Detalles</a>
+    </div>
+</section>
+
+
+    <section class="about-us">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos una tienda apasionada por el deporte...</p>
+    </section>
+
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p>Ponte en contacto con nosotros:</p>
+        <ul class="contact-links">
+            <li><a href="tel:+123456789">Teléfono: +123-456-789</a></li>
+            <li><a href="mailto:info@sportiumsellers.com">Correo Electrónico: info@sportiumsellers.com</a></li>
+            <li><a href="https://www.facebook.com/sportiumsellers">Facebook</a></li>
+            <li><a href="https://wa.me/123456789">WhatsApp</a></li>
+            <li><a href="https://www.instagram.com/sportiumsellers">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 SportiumSellers. Todos los derechos reservados.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
