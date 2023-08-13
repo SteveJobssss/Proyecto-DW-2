@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportiumSellers - Artículos Deportivos</title>
-    <link rel="stylesheet" href="index.css"> <!-- Enlace a tu archivo de hojas de estilo CSS -->
+    <link rel="stylesheet" href="index.css"> 
+    <meta http-equiv="refresh" content="5;url=welcome.html"> <!-- Redirige después de 5 segundos -->
 </head>
 
 <body>
@@ -78,6 +79,7 @@
         <ul class="contact-links">
             <li><a href="tel:+123456789">Teléfono: +123-456-789</a></li>
             <li><a href="mailto:info@sportiumsellers.com">Correo Electrónico: info@sportiumsellers.com</a></li>
+
         </ul>
     </section>
 <footer>
@@ -86,7 +88,7 @@
             <a href="#">Inicio</a>
             <a href="#">Productos</a>
             <a href="#contacto">Contacto</a>
-            <a href="#">Políticas</a>
+            <a href="#politicas" id="politicas-link">Políticas</a>
         </div>
         <div class="footer-social">
             <a href="https://www.facebook.com/sportiumsellers"><img
@@ -100,5 +102,34 @@
                     width="30" height="30"></a>
         </div>
     </div>
-    <p class="footer-copyright">&copy; 2023 SportiumSellers. Todos los derechos reservados.</p>
 </footer>
+
+<!-- Modal para las políticas -->
+<div class="modal-overlay" id="politicas-modal">
+    <div class="modal-content">
+        <h2>Políticas de Compras, Devoluciones y Plazo de Entrega</h2>
+        <!-- Contenido de las políticas aquí -->
+        <p>En SportiumSellers, nos comprometemos a ofrecer productos de alta calidad para tus necesidades deportivas...
+        </p>
+        <p>Si no estás satisfecho con tu compra, aceptamos devoluciones dentro de los 30 días posteriores a la fecha de
+            entrega...</p>
+        <p>Nos esforzamos por entregar tus productos en el plazo de 5-7 días hábiles a partir de la fecha de
+            confirmación de la compra...</p>
+        <button id="cerrar-modal">Cerrar</button>
+    </div>
+</div>
+
+<script>
+    const politicasLink = document.getElementById("politicas-link");
+    const politicasModal = document.getElementById("politicas-modal");
+    const cerrarModal = document.getElementById("cerrar-modal");
+
+    politicasLink.addEventListener("click", (event) => {
+        event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+        politicasModal.style.display = "flex";
+    });
+
+    cerrarModal.addEventListener("click", () => {
+        politicasModal.style.display = "none";
+    });
+</script>
