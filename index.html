@@ -30,7 +30,6 @@
 =======
     <link rel="stylesheet" href="index.css"> 
 </head>
-
 <body>
 >>>>>>> master
     <header>
@@ -57,7 +56,6 @@
                 <p id="registration-status"></p>
             </section>
     </header>
-
 <section id="login" class="login">
     <h2>Iniciar Sesión</h2>
     <form id="login-form">
@@ -114,6 +112,15 @@
         <p>¡Prendas Oficiales!</p>
         <a href="#" class="product-button">Ver Detalles</a>
     </div>
+            </div><div class="brands">
+            <h2>Marcas</h2>
+            <ul>
+            <li><a href="#">Nike</a></li>
+            <li><a href="#">Adidas</a></li>
+            <li><a href="#">Puma</a></li>
+            <li><a href="#">Under Armour</a></li>
+            <li><a href="#">New Balance</a></li>
+            </ul>
     <div class="product">
         <img src="https://th.bing.com/th/id/R.bb87f159e597b80cecc2daa404bf150e?rik=Ub6SmYwTbDDlRw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fskechers-png--1082.png&ehk=ft3v9J4nT8gqs0EQ6ktaueddwR9AIDGbD1BsG6i%2f2nM%3d&risl=&pid=ImgRaw&r=0"
             alt="Producto 2" style="width: 750px; height: 450px;">
@@ -201,7 +208,7 @@
     const cerrarModal = document.getElementById("cerrar-modal");
 
     politicasLink.addEventListener("click", (event) => {
-        event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+        event.preventDefault();
         politicasModal.style.display = "flex";
     });
 
