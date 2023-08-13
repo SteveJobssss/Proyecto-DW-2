@@ -5,29 +5,12 @@ function showMessage(message) {
     messageElement.textContent = message;
     messageElement.style.display = "block";
 }
-<<<<<<< HEAD
-
 // Función para registrar un nuevo usuario
 function registerUser() {
-
-=======
-// Función para registrar un nuevo usuario
-function registerUser() {
->>>>>>> master
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
 
-<<<<<<< HEAD
-    // Mostrar mensaje de confirmación
-    showMessage(`¡Registro exitoso para ${username}!`);
-}
-// Función para iniciar sesión
-function loginUser() {
-    const username = document.getElementById("login-username").value;
-    const password = document.getElementById("login-password").value;
-
-=======
     // Crear un objeto con la información del usuario
     const newUser = {
         username: username,
@@ -61,5 +44,4 @@ function loginUser() {
     } else {
         showMessage("Usuario o contraseña incorrectos.");
     }
->>>>>>> master
 }
