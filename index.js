@@ -10,8 +10,7 @@ function registerUser() {
     const username = document.getElementById("username").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-
-    // Crear un objeto con la información del usuario
+    /* Crear un objeto con la información del usuario */
     const newUser = {
         username: username,
         email: email,
