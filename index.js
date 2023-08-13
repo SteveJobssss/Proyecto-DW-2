@@ -17,36 +17,27 @@ function registerUser() {
         email: email,
         password: password
     };
-
     // Obtener la lista de usuarios registrados almacenados en el almacenamiento local
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
-
     // Agregar el nuevo usuario a la lista de usuarios registrados
     registeredUsers.push(newUser);
-
     // Guardar la lista actualizada de usuarios en el almacenamiento local
     localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
-
     // Mostrar mensaje de confirmación
     showMessage(`¡Registro exitoso para ${username}!`);
-
     // Restablecer los valores de los campos de entrada
     document.getElementById("username").value = "";
     document.getElementById("email").value = "";
     document.getElementById("password").value = "";
 }
-
 // Función para iniciar sesión
 function loginUser() {
     const inputUsername = document.getElementById("login-username").value;
     const inputPassword = document.getElementById("login-password").value;
-
     // Obtener la lista de usuarios registrados almacenados en el almacenamiento local
     const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
-
     // Buscar el usuario en la lista de usuarios registrados
     const foundUser = registeredUsers.find(user => user.username === inputUsername && user.password === inputPassword);
-
     // Verificar si se encontró el usuario
     if (foundUser) {
         showMessage("¡Inicio de sesión exitoso!");
