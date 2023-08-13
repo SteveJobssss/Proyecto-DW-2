@@ -5,6 +5,7 @@
     background-color: #f0f2f5;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
     max-width: 400px;
     margin: 0 auto;
 }
@@ -13,11 +14,25 @@
     margin-bottom: 20px;
 }
 
+=======
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    float: right;
+    /* Alinear hacia la derecha */
+}
+.registration h2 ,
+    .registration p {
+            color: #000;
+            /* Color de texto negro */
+    margin-bottom: 20px;
+    }
+>>>>>>> master
 .registration label {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
 }
+<<<<<<< HEAD
 
 .registration input {
     width: 100%;
@@ -27,6 +42,20 @@
     border-radius: 5px;
 }
 
+=======
+.registration .input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.registration input {
+    flex: 1;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+>>>>>>> master
 .registration button {
     background-color: #1877f2;
     color: #fff;
@@ -36,13 +65,19 @@
     cursor: pointer;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para los botones de Registrarse e Iniciar sesión */
 .auth-buttons {
     text-align: center;
     margin-top: 20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .auth-buttons button {
     display: inline-block;
     margin: 0 5px;
@@ -53,17 +88,26 @@
     color: #1877f2;
     cursor: pointer;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para colocar los botones en línea */
 .auth-buttons button:first-child {
     margin-left: 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 @media (max-width: 480px) {
     .auth-buttons {
         flex-direction: column;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     .auth-buttons button {
         margin: 5px auto;
     }
@@ -77,13 +121,19 @@ body {
     color: #333;
     /* Color de texto principal */
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para el encabezado */
 header {
     background-color: #222;
@@ -92,12 +142,18 @@ header {
     /* Color de texto claro para el encabezado */
     padding: 10px 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .logo {
     font-size: 24px;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para el título del héroe */
 .hero h1 {
     font-size: 36px;
@@ -107,7 +163,10 @@ header {
     color: #222;
     /* Color de texto oscuro para el título */
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para los enlaces de navegación */
 .nav-links {
     list-style: none;
@@ -116,17 +175,26 @@ header {
     align-items: center;
     margin-top: 10px;
 }
+<<<<<<< HEAD
 
 .nav-links li {
     margin: 0 15px;
 }
 
+=======
+.nav-links li {
+    margin: 0 15px;
+}
+>>>>>>> master
 .nav-links a {
     text-decoration: none;
     color: #fff;
     /* Color de texto claro para los enlaces de navegación */
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para la sección de contacto */
 .contact {
     background-color: #fff;
@@ -134,29 +202,44 @@ header {
     padding: 40px 0;
     text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .contact h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #222;
     /* Color de texto oscuro para los títulos */
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .contact-links {
     list-style: none;
     padding: 0;
 }
+<<<<<<< HEAD
 
 .contact-links li {
     margin-bottom: 10px;
 }
 
+=======
+.contact-links li {
+    margin-bottom: 10px;
+}
+>>>>>>> master
 .contact-links a {
     text-decoration: none;
     color: #007bff;
     /* Color de enlace brillante para los enlaces de contacto */
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para el pie de página */
 footer {
     background-color: #222;
@@ -166,7 +249,10 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /* Estilos para el botón de llamada a la acción */
 .cta-button {
     display: inline-block;
@@ -180,8 +266,15 @@ footer {
     margin-top: 20px;
     transition: background-color 0.3s ease-in-out;
 }
+<<<<<<< HEAD
 
 .cta-button:hover {
     background-color: #0056b3;
     /* Color de fondo más oscuro al pasar el mouse */
 }
+=======
+.cta-button:hover {
+    background-color: #0056b3;
+    /* Color de fondo más oscuro al pasar el mouse */
+}
+>>>>>>> master
