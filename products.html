@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - SportiumSellers</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">SportiumSellers</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="products.html">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="product-list">
+        <div class="filters">
+            <label for="category">Categoría:</label>
+            <select id="category">
+                <option value="todos">Todos</option>
+                <option value="camisetas">Camisetas</option>
+                <option value="balones">Balones</option>
+                <option value="zapatillas">Zapatillas</option>
+            </select>
+            <label for="price">Precio máximo:</label>
+            <input type="number" id="price" placeholder="Máximo Precio">
+
+            <label for="brand">Marca:</label>
+            <select id="brand">
+                <option value="todas">Todas</option>
+                <option value="nike">Nike</option>
+                <option value="adidas">Adidas</option>
+            </select>
+
+            <button id="filter-button">Filtrar</button>
+        </div>
+
+        <div class="product-container">
+        </div>
+    </section>
+    <script>
+        const products = [
+            {
+                name: "Camiseta Deportiva Nike",
+                category: "camisetas",
+                price: 29.99,
+                brand: "Nike",
+                image: "https://th.bing.com/th/id/OIP.mHXa6f0jNk5b_UKSrtqZGwHaIW?pid=ImgDet&rs=1"
+            },
+            {
+                name: "Balón de Fútbol Adidas",
+                category: "balones",
+                price: 19.99,
+                brand: "Adidas",
+                image: "https://http2.mlstatic.com/balon-de-futbol-adidas-performance-brazuca-D_NQ_NP_742411-MLM20538146455_012016-F.jpg"
+            },
+            {
+                name: "Zapatillas Running Puma",
+                category: "zapatillas",
+                price: 49.99,
+                brand: "Puma",
+                image: "https://th.bing.com/th/id/R.453aadf9ebf4cbd051bd136765ea5fb3?rik=qP%2bmbL9lK6b50Q&pid=ImgRaw&r=0"
+            },
+        ];
+
+        const filters = {
+            category: "todos",
+            maxPrice: Infinity,
+            brand: "todas"
+        };
+
+        const categorySelect = document.getElementById("category");
+        const priceInput = document.getElementById("price");
+        const brandSelect = document.getElementById("brand");
+        const productContainer = document.querySelector(".product-container");
+        const filterButton = document.getElementById("filter-button");
+
+        function updateProducts() {
+            const categoryFilter = categorySelect.value;
+            const maxPriceFilter = parseFloat(priceInput.value) || Infinity;
+            const brandFilter = brandSelect.value;
+
+            const filteredProducts = products.filter(product => {
+                const meetsCategory = categoryFilter === "todos" || product.category === categoryFilter;
+                const meetsPrice = product.price <= maxPriceFilter;
+                const meetsBrand = brandFilter === "todas" || product.brand === brandFilter;
+                return meetsCategory && meetsPrice && meetsBrand;
+            });
+
+            productContainer.innerHTML = "";
+
+            filteredProducts.forEach(product => {
+                const productDiv = document.createElement("div");
+                productDiv.classList.add("product");
+
+                const productImage = document.createElement("img");
+                productImage.src = product.image;
+                productImage.alt = product.name;
+                productImage.style.width = "250px";
+                productImage.style.height = "250px";
+
+                const productName = document.createElement("h3");
+                productName.textContent = product.name;
+
+                const productPrice = document.createElement("p");
+                productPrice.textContent = `Precio: $${product.price.toFixed(2)}`;
+
+                const detailsLink = document.createElement("a");
+                detailsLink.href = "#";
+                detailsLink.textContent = "Ver Detalles";
+                detailsLink.classList.add("product-button");
+
+                productDiv.appendChild(productImage);
+                productDiv.appendChild(productName);
+                productDiv.appendChild(productPrice);
+                productDiv.appendChild(detailsLink);
+
+                productContainer.appendChild(productDiv);
+            });
+        }
+
+        categorySelect.addEventListener("change", updateProducts);
+        priceInput.addEventListener("input", updateProducts);
+        brandSelect.addEventListener("change", updateProducts);
+
+        filterButton.addEventListener("click", () => {
+            updateProducts();
+        });
+
+        // Inicializa la lista de productos al cargar la página
+        updateProducts();
+    </script>
+</body>
+
+</html>

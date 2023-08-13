@@ -7,16 +7,15 @@
     <title>SportiumSellers - Artículos Deportivos</title>
     <link rel="stylesheet" href="index.css"> 
 </head>
-
 <body>
     <header>
         <nav>
             <div class="logo">SportiumSellers</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+<ul class="nav-links">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="products.html">Productos</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+</ul>
         </nav>
             <section id="registro" class="registration">
                 <h2>Registro de Usuario</h2>
@@ -29,7 +28,6 @@
                 <p id="registration-status"></p>
             </section>
     </header>
-
 <section id="login" class="login">
     <h2>Iniciar Sesión</h2>
     <form id="login-form">
@@ -41,16 +39,50 @@
     <section class="hero">
         <h1>Bienvenido a SportiumSellers</h1>
         <p>Tu tienda en línea de artículos deportivos de alta calidad.</p>
-        <a href="#" class="cta-button">Ver Productos</a>
+        <a href="products.html" class="cta-button">Ver Productos</a>
     </section>
-<section class="featured-products">
+    <div class="brands">
+        <h2>Marcas</h2>
+            <ul>
+                <li><a href="https://www.nike.com/">Nike</a></li>
+                <li><a href="https://www.adidas.com/">Adidas</a></li>
+                <li><a href="https://www.puma.com/">Puma</a></li>
+                <li><a href="https://www.underarmour.com/">Under Armour</a></li>
+                <li><a href="https://www.newbalance.com/">New Balance</a></li>
+            </ul>
+
+            <div>
+                <ul>
+                    <li class="submenu">
+                        <img id="img-carrito" scr="https://www.seekpng.com/png/detail/986-9868123_png-file-icono-carrito-de-compras.png" alt="car">
+                        <div id="carrito">
+                            <table id="lista-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+            <section class="featured-products">
     <h2>Productos Destacados</h2>
     <div class="product">
         <img src="https://eldeportivo.com.co/wp-content/uploads/2023/01/Polemica-precio-camiseta-Atletico-Nacional-2023-1.png" alt="Producto 1" style="width: 750px; height: 450px;">
         <h3>Camiseta Deportiva</h3>
         <p>¡Prendas Oficiales!</p>
         <a href="#" class="product-button">Ver Detalles</a>
+        </div>
     </div>
+
+
+
     <div class="product">
         <img src="https://th.bing.com/th/id/R.bb87f159e597b80cecc2daa404bf150e?rik=Ub6SmYwTbDDlRw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fskechers-png--1082.png&ehk=ft3v9J4nT8gqs0EQ6ktaueddwR9AIDGbD1BsG6i%2f2nM%3d&risl=&pid=ImgRaw&r=0"
             alt="Producto 2" style="width: 750px; height: 450px;">
@@ -65,8 +97,6 @@
         <a href="#" class="product-button">Ver Detalles</a>
     </div>
 </section>
-
-
     <section class="about-us">
         <h2>Acerca de Nosotros</h2>
         <p>Somos una tienda apasionada por el deporte...</p>
@@ -124,7 +154,7 @@
     const cerrarModal = document.getElementById("cerrar-modal");
 
     politicasLink.addEventListener("click", (event) => {
-        event.preventDefault(); // Evita que el enlace siga el comportamiento predeterminado
+        event.preventDefault();
         politicasModal.style.display = "flex";
     });
 
