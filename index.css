@@ -180,4 +180,10 @@ img {
     max-width: 100%;
 }
 
+.submenu {
+    position: relative;
+}
+.submenu #carrito {
+    display: none;
+}
 
