@@ -16,6 +16,12 @@
             /* Color de texto negro */
     margin-bottom: 20px;
     }
+    .registration h3 ,
+    .registration p {
+            color: #000;
+            /* Color de texto negro */
+    margin-bottom: 20px;
+    }
 .registration label {
     display: block;
     font-size: 14px;
