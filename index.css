@@ -10,28 +10,33 @@
     float: right;
     /* Alinear hacia la derecha */
 }
-.registration h2 ,
-    .registration p {
-            color: #000;
-            /* Color de texto negro */
+
+.registration h2,
+.registration p {
+    color: #000;
+    /* Color de texto negro */
     margin-bottom: 20px;
-    }
-    .registration h3 ,
-    .registration p {
-            color: #000;
-            /* Color de texto negro */
+}
+
+.registration h3,
+.registration p {
+    color: #000;
+    /* Color de texto negro */
     margin-bottom: 20px;
-    }
+}
+
 .registration label {
     display: block;
     font-size: 14px;
     margin-bottom: 5px;
 }
+
 .registration .input-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .registration input {
     flex: 1;
     padding: 8px;
@@ -39,6 +44,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 .registration button {
     background-color: #1877f2;
     color: #fff;
@@ -48,11 +54,13 @@
     cursor: pointer;
     font-weight: bold;
 }
+
 /* Estilos para los botones de Registrarse e Iniciar sesión */
 .auth-buttons {
     text-align: center;
     margin-top: 20px;
 }
+
 .auth-buttons button {
     display: inline-block;
     margin: 0 5px;
@@ -63,18 +71,22 @@
     color: #1877f2;
     cursor: pointer;
 }
+
 /* Estilos para colocar los botones en línea */
 .auth-buttons button:first-child {
     margin-left: 0;
 }
+
 @media (max-width: 480px) {
     .auth-buttons {
         flex-direction: column;
     }
+
     .auth-buttons button {
         margin: 5px auto;
     }
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -84,11 +96,13 @@ body {
     color: #333;
     /* Color de texto principal */
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+
 /* Estilos para el encabezado */
 header {
     background-color: #222;
@@ -97,10 +111,12 @@ header {
     /* Color de texto claro para el encabezado */
     padding: 10px 0;
 }
+
 .logo {
     font-size: 24px;
     font-weight: bold;
 }
+
 /* Estilos para el título del héroe */
 .hero h1 {
     font-size: 36px;
@@ -110,6 +126,7 @@ header {
     color: #222;
     /* Color de texto oscuro para el título */
 }
+
 /* Estilos para los enlaces de navegación */
 .nav-links {
     list-style: none;
@@ -118,14 +135,17 @@ header {
     align-items: center;
     margin-top: 10px;
 }
+
 .nav-links li {
     margin: 0 15px;
 }
+
 .nav-links a {
     text-decoration: none;
     color: #fff;
     /* Color de texto claro para los enlaces de navegación */
 }
+
 /* Estilos para la sección de contacto */
 .contact {
     background-color: #fff;
@@ -133,24 +153,29 @@ header {
     padding: 40px 0;
     text-align: center;
 }
+
 .contact h2 {
     font-size: 28px;
     margin-bottom: 20px;
     color: #222;
     /* Color de texto oscuro para los títulos */
 }
+
 .contact-links {
     list-style: none;
     padding: 0;
 }
+
 .contact-links li {
     margin-bottom: 10px;
 }
+
 .contact-links a {
     text-decoration: none;
     color: #007bff;
     /* Color de enlace brillante para los enlaces de contacto */
 }
+
 /* Estilos para el pie de página */
 footer {
     background-color: #222;
@@ -160,6 +185,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
 /* Estilos para el botón de llamada a la acción */
 .cta-button {
     display: inline-block;
@@ -173,6 +199,7 @@ footer {
     margin-top: 20px;
     transition: background-color 0.3s ease-in-out;
 }
+
 .cta-button:hover {
     background-color: #0056b3;
 }
