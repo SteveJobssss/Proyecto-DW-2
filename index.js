@@ -104,6 +104,12 @@ function eliminarElemento(e){
         e.target.parentElement.parentElement.remove();
         elemento = e.target.parentElement.parentElement;
         elementoId = elemento.querySelector('a').getAttribute('data-id');
-        
+
     }
+}
+function vaciarCarrito() {
+    while(lista.firstChild) {
+        lista.removeChild(lista,firstChild);
+    }
+    return false;
 }
