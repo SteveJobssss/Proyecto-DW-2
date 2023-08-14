@@ -94,3 +94,16 @@ function insertarCarrito(elemento) {
     `;
     lista.appendChild(row);
 }
+
+function eliminarElemento(e){
+    e.preventDefault();
+    let elemento,
+        elementoId;
+
+    if(e.target.classList.contains('borrar')){
+        e.target.parentElement.parentElement.remove();
+        elemento = e.target.parentElement.parentElement;
+        elementoId = elemento.querySelector('a').getAttribute('data-id');
+        
+    }
+}
