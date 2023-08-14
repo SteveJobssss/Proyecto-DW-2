@@ -73,4 +73,24 @@ function leerDatosElemento(elemento) {
         precio: elemento.querySelector('.precio').textContent,
         id: elemento.querySelector('a').getAttribute('data-id')
     }
+    insertarCarrito(infoElemento);
+}
+
+function insertarCarrito(elemento) {
+    const row = document.createElement('tr');
+    row.innerHTML = `
+        <td>
+            <img src="${elemento.imagen}" width=100 heigth=150px >
+        </td>
+        <td>
+            ${elemento.titulo}
+        </td>
+        <td>
+            ${elemento.precio}
+        </td>
+        <td>
+            <a href="#" class="borrar" data-id="${elemento.id}" >X</a>
+        </td>
+    `;
+    lista.appendChild(row);
 }
